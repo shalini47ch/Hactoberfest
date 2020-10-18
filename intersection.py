@@ -2,13 +2,19 @@ def intersection(A,B,m,n):
 i,j=0,0
 res=[]
 while(i<m and j<n):
- if(A[i]==B[j]):
-   res.append(A[i])
+   a,b=A[i],B[j]
+   if(a==b):
+     res.append(a)
    i=i+1
    j=j+1
-  elif(A[i]<B[j]):
-  i=i+1
-  else:
-  j=j+1
-  return res
+   elif(a<b):
+     i=i+1
+   else:
+    j=j+1
+return res
+A=[1,2,4,5,6]
+B=[2,3,5,7,1]
+m=len(A)
+n=len(B)
+intersection(A,B,m,n)
   
