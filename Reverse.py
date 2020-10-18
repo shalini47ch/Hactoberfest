@@ -6,3 +6,6 @@ def reverse(arr,n):
 	  arr[start]=arr[end]
 	  arr[end]=temp
 	 return arr
+arr=[1,4,6,8]
+n=len(arr)
+reverse(arr,n)
