@@ -1,5 +1,7 @@
 def intersection(A,B,m,n):
 i,j=0,0
+A=sorted(A)
+B=sorted(B)
 res=[]
 while(i<m and j<n):
    a,b=A[i],B[j]
